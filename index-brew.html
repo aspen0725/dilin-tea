@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>冲泡品鉴指南 · 帝临文化</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .brew-hero { background: #1A5030; }
+    .brew-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 20px; }
+    .brew-item { background: var(--white); border-radius: 16px; overflow: hidden; box-shadow: 0 2px 12px var(--shadow); padding: 20px 16px; text-align: center; }
+    .brew-icon { font-size: 36px; margin-bottom: 10px; }
+    .brew-label { font-size: 12px; color: var(--text-light); margin-bottom: 4px; }
+    .brew-value { font-size: 15px; font-weight: 700; color: var(--primary); line-height: 1.4; }
+    .comparison-table { width: 100%; border-collapse: collapse; background: var(--white); border-radius: 16px; overflow: hidden; box-shadow: 0 2px 12px var(--shadow); }
+    .comparison-table th { background: var(--primary); color: var(--white); padding: 12px 14px; font-size: 13px; font-weight: 600; text-align: left; }
+    .comparison-table td { padding: 12px 14px; font-size: 13px; color: var(--text); border-bottom: 1px solid var(--border); }
+    .comparison-table tr:last-child td { border-bottom: none; }
+    .comparison-table tr:nth-child(even) td { background: rgba(26,80,48,0.03); }
+    .tip-card { background: linear-gradient(135deg, rgba(26,80,48,0.06), rgba(200,169,110,0.08)); border-radius: 16px; padding: 20px; margin: 16px 0; border: 1px solid rgba(200,169,110,0.2); }
+    .tip-title { font-size: 14px; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+    .tip-text { font-size: 13px; color: var(--text-light); line-height: 1.8; }
+    @media (max-width: 480px) { .brew-grid { grid-template-columns: 1fr 1fr; gap: 10px; } }
+  </style>
+</head>
+<body>
+
+<nav class="top-nav">
+  <div class="nav-inner">
+    <a href="index-brand.html" class="nav-logo">
+      <span style="font-size:22px;">🍃</span>
+      <span class="nav-logo-text">帝 临</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index-brand.html">识茶</a></li>
+      <li><a href="index-aroma.html">十大香型</a></li>
+      <li><a href="index-products.html">买茶</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="hero">
+  <img class="hero-img" src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80" alt="冲泡品鉴" style="width:100%;height:56vw;min-height:280px;max-height:520px;object-fit:cover;filter:brightness(0.75)">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <p class="hero-subtitle">Brewing Guide</p>
+      <h1 class="hero-title">冲泡品鉴指南</h1>
+      <p class="hero-tagline">一壶好茶，从正确的冲泡开始</p>
+    </div>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <a href="#">首页</a>
+  <span class="breadcrumb-sep">›</span>
+  <a href="#">识茶</a>
+  <span class="breadcrumb-sep">›</span>
+  <span>冲泡品鉴指南</span>
+</div>
+
+<div class="container pb-footer">
+
+  <!-- 冲泡六步 -->
+  <div class="section">
+    <div class="section-header">
+      <p class="section-eyebrow">The Six Steps</p>
+      <h2 class="section-title">冲泡六步法</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-dot">1</div>
+        <div class="step-title">温杯烫壶</div>
+        <div class="step-text">用沸水将盖碗/紫砂壶内外冲淋一遍，提升壶温，让干茶遇热释放香气。</div>
+        <div class="step-detail">💡 壶温越高，香气越容易激发，尤其适合高香型单丛</div>
+      </div>
+      <div class="step">
+        <div class="step-dot">2</div>
+        <div class="step-title">投茶</div>
+        <div class="step-text">投入约8克单丛茶（约盖碗容量的1/3），条索紧结的茶可适当多投。</div>
+        <div class="step-detail">💡 投茶量决定浓度，可根据个人口味上下调整2-3克</div>
+      </div>
+      <div class="step">
+        <div class="step-dot">3</div>
+        <div class="step-title">高温冲泡</div>
+        <div class="step-text">必须用100°C沸水！单丛属乌龙茶，需要高温才能充分释放香气物质。</div>
+        <div class="step-detail">⚠️ 水温不够，是单丛香气不足的最常见原因</div>
+      </div>
+      <div class="step">
+        <div class="step-dot">4</div>
+        <div class="step-title">定点高冲</div>
+        <div class="step-text">将沸水壶提高，沿碗沿环形注水，让水流充分激荡茶叶，均匀受热。</div>
+        <div class="step-detail">💡 高冲注水能带入空气，增加茶汤的鲜活度</div>
+      </div>
+      <div class="step">
+        <div class="step-dot">5</div>
+        <div class="step-title">快进快出</div>
+        <div class="step-text">前5泡注水后，立即盖上盖碗，约5-8秒即可出汤，不宜坐杯。</div>
+        <div class="step-detail">💡 单丛讲究"不苦不涩"，坐杯过长会产生苦涩感</div>
+      </div>
+      <div class="step">
+        <div class="step-dot">6</div>
+        <div class="step-title">闻香品饮</div>
+        <div class="step-text">出汤后先闻盖香（叶底香气），再品茶汤，感受香气与滋味的层次变化。</div>
+        <div class="step-detail">💡 优质单丛的香气会随冲泡次数变化，这是品鉴的乐趣所在</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 参数速查 -->
+  <div class="section">
+    <div class="section-header">
+      <p class="section-eyebrow">Quick Reference</p>
+      <h2 class="section-title">参数速查表</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="brew-grid">
+      <div class="brew-item">
+        <div class="brew-icon">🍵</div>
+        <div class="brew-label">推荐茶具</div>
+        <div class="brew-value">盖碗（110ml）<br>或紫砂壶（120ml）</div>
+      </div>
+      <div class="brew-item">
+        <div class="brew-icon">🌡️</div>
+        <div class="brew-label">冲泡水温</div>
+        <div class="brew-value">100°C 沸水<br>必须现烧现泡</div>
+      </div>
+      <div class="brew-item">
+        <div class="brew-icon">🍃</div>
+        <div class="brew-label">投茶量</div>
+        <div class="brew-value">8克（1/3壶）<br>可随口味调整</div>
+      </div>
+      <div class="brew-item">
+        <div class="brew-icon">💧</div>
+        <div class="brew-label">注水方式</div>
+        <div class="brew-value">定点高冲<br>环形注水</div>
+      </div>
+    </div>
+
+    <table class="comparison-table" style="margin-top:20px;">
+      <thead>
+        <tr>
+          <th>冲泡次数</th>
+          <th>出汤时间</th>
+          <th>滋味特点</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>第1泡</td><td>5秒（洗茶）</td><td>唤醒茶叶，不饮用</td></tr>
+        <tr><td>第2泡</td><td>5-8秒</td><td>香气初绽，滋味清爽</td></tr>
+        <tr><td>第3-5泡</td><td>7-10秒</td><td>黄金区间，香气滋味最佳</td></tr>
+        <tr><td>第6-8泡</td><td>10-15秒</td><td>甘甜为主，余韵悠长</td></tr>
+        <tr><td>第9泡后</td><td>每泡+5秒</td><td>观察茶汤颜色，淡即为终点</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 选具建议 -->
+  <div class="section">
+    <div class="section-header">
+      <p class="section-eyebrow">Teaware Guide</p>
+      <h2 class="section-title">茶具选择建议</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="product-card" style="margin-bottom:14px;">
+      <div class="product-body">
+        <div class="product-name" style="font-size:16px;">🫖 盖碗（推荐首选）</div>
+        <p class="product-desc" style="margin-top:8px;">白瓷或青瓷盖碗，散热快，便于观察叶底，最适合品鉴单丛香气的层次变化。选购110ml标准容量即可。</p>
+      </div>
+    </div>
+    <div class="product-card" style="margin-bottom:14px;">
+      <div class="product-body">
+        <div class="product-name" style="font-size:16px;">🏺 紫砂壶</div>
+        <p class="product-desc" style="margin-top:8px;">透气性好，能软化水质，让茶汤更醇厚。适合冲泡老丛/通天香等滋味厚重型单丛。选购120ml朱泥或段泥壶。</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-body">
+        <div class="product-name" style="font-size:16px;">💧 品茗杯</div>
+        <p class="product-desc" style="margin-top:8px;">建议选用白色或浅色内壁的杯子，便于观察茶汤颜色。容量约30-50ml，小杯细品更能感受香气。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 选水建议 -->
+  <div class="section">
+    <div class="section-header">
+      <p class="section-eyebrow">Water Guide</p>
+      <h2 class="section-title">泡茶用水建议</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">✅</div>
+      <div>
+        <div class="contact-title">推荐用水</div>
+        <div class="contact-text">纯净水/山泉水最佳<br>TDS值50-150mg/L为佳，水质过软或过硬都会影响口感</div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">❌</div>
+      <div>
+        <div class="contact-title">避免使用</div>
+        <div class="contact-text">自来水（含氯，会破坏香气）<br>纯净水TDS过低会使茶汤单薄</div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">💡</div>
+      <div>
+        <div class="contact-title">水温注意</div>
+        <div class="contact-text">随手泡现烧，水温不足时会出现"茶水分离"（香气滋味分离）的现象</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 储存建议 -->
+  <div class="section">
+    <div class="section-header">
+      <p class="section-eyebrow">Storage</p>
+      <h2 class="section-title">茶叶储存建议</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-title">🫙 储存四要素</div>
+      <p class="tip-text">
+        <strong>密封</strong>：取茶后立即密封，避免与空气接触氧化<br>
+        <strong>干燥</strong>：防潮是重中之重，潮湿会让茶发霉变质<br>
+        <strong>避光</strong>：阳光直射会破坏茶叶中的香气物质<br>
+        <strong>常温</strong>：无需冷藏，常温阴凉处即可（可放入紫砂罐或铁罐）
+      </p>
+    </div>
+    <div class="tip-card" style="background:rgba(200,169,110,0.08);border-color:rgba(200,169,110,0.3);">
+      <div class="tip-title">⏰ 赏味期</div>
+      <p class="tip-text">单丛茶属于半发酵乌龙茶，密封保存得当，可保存2-3年。隔年陈化后香气更醇厚，别有风味。但建议1年内饮用，风味最佳。</p>
+    </div>
+  </div>
+
+</div>
+
+<nav class="bottom-nav">
+  <a href="index-brand.html" class="bottom-nav-item">
+    <span class="bottom-nav-icon">📖</span>识茶
+  </a>
+  <div class="bottom-nav-divider"></div>
+  <a href="index-aroma.html" class="bottom-nav-item">
+    <span class="bottom-nav-icon">🌸</span>十大香型
+  </a>
+  <div class="bottom-nav-divider"></div>
+  <a href="index-products.html" class="bottom-nav-item">
+    <span class="bottom-nav-icon">🛒</span>买茶
+  </a>
+  <div class="bottom-nav-divider"></div>
+  <a href="#" class="bottom-nav-item">
+    <span class="bottom-nav-icon">💬</span>联系
+  </a>
+</nav>
+
+<footer class="footer">
+  <p class="footer-logo">帝 临</p>
+  <p class="footer-tagline">山野 · 匠心 · 东方美学</p>
+  <div class="footer-divider"></div>
+  <p class="footer-text">客服微信：aspen0725</p>
+  <p class="footer-text">产地：广东潮州凤凰山</p>
+  <p class="footer-copyright">© 2026 帝临文化 保留所有权利</p>
+</footer>
+
+</body>
+</html>
