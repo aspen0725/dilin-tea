@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>售后咨询 · 帝临文化</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .faq-item { background: var(--white); border-radius: 14px; margin-bottom: 12px; overflow: hidden; box-shadow: 0 2px 10px var(--shadow); }
+    .faq-q { padding: 16px 20px; font-size: 14px; font-weight: 700; color: var(--text); display: flex; align-items: center; justify-content: space-between; cursor: pointer; }
+    .faq-q::after { content: '+'; font-size: 18px; color: var(--secondary); transition: transform 0.2s; }
+    .faq-item.open .faq-q::after { transform: rotate(45deg); }
+    .faq-a { display: none; padding: 0 20px 16px; font-size: 13px; color: var(--text-light); line-height: 1.8; }
+    .faq-item.open .faq-a { display: block; }
+    .service-card { background: linear-gradient(135deg, rgba(26,80,48,0.06), rgba(200,169,110,0.08)); border-radius: 20px; padding: 28px 24px; text-align: center; border: 1px solid rgba(200,169,110,0.2); margin-bottom: 20px; }
+    .service-emoji { font-size: 48px; margin-bottom: 12px; }
+    .service-title { font-size: 18px; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+    .service-text { font-size: 13px; color: var(--text-light); line-height: 1.8; margin-bottom: 16px; }
+    .service-btn { display: inline-block; background: var(--primary); color: var(--white); text-decoration: none; font-size: 14px; font-weight: 600; padding: 11px 28px; border-radius: 24px; transition: background 0.2s; }
+    .service-btn:hover { background: var(--primary-light); }
+    .process-step { display: flex; gap: 14px; margin-bottom: 14px; align-items: flex-start; }
+    .process-num { width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: var(--white); font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .process-content { flex: 1; }
+    .process-title { font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 2px; }
+    .process-text { font-size: 12px; color: var(--text-light); line-height: 1.6; }
+  </style>
+</head>
+<body>
+
+<nav class="top-nav">
+  <div class="nav-inner">
+    <a href="index-brand.html" class="nav-logo">
+      <span style="font-size:22px;">🍃</span>
+      <span class="nav-logo-text">帝 临</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index-brand.html">识茶</a></li>
+      <li><a href="index-products.html">买茶</a></li>
+      <li><a href="#" class="active">联系</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="hero">
+  <img class="hero-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80" alt="售后咨询" style="width:100%;height:56vw;min-height:280px;max-height:520px;object-fit:cover;filter:brightness(0.75)">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <p class="hero-subtitle">After-Sales</p>
+      <h1 class="hero-title">售后咨询</h1>
+      <p class="hero-tagline">您的满意，是我们最大的安心</p>
+    </div>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <a href="#">首页</a>
+  <span class="breadcrumb-sep">›</span>
+  <span>售后咨询</span>
+</div>
+
+<div class="container pb-footer">
+
+  <!-- 客服联系 -->
+  <div class="section">
+    <div class="service-card">
+      <div class="service-emoji">💬</div>
+      <div class="service-title">联系人工客服</div>
+      <div class="service-text">
+        如有任何问题（订单、物流、品质、推荐等），<br>欢迎添加客服微信，我们随时在线。
+      </div>
+      <div style="font-size:18px;font-weight:700;color:var(--primary);margin-bottom:14px;">aspen0725</div>
+      <a href="#" class="service-btn">添加客服微信 →</a>
+    </div>
+  </div>
+
+  <!-- 服务承诺 -->
+  <div class="section" style="padding-top:0;">
+    <div class="section-header">
+      <p class="section-eyebrow">Our Commitment</p>
+      <h2 class="section-title">服务承诺</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">🔄</div>
+      <div>
+        <div class="contact-title">7天无理由退换</div>
+        <div class="contact-text">未开封、不影响二次销售的商品，7天内可申请退换货</div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">✅</div>
+      <div>
+        <div class="contact-title">品质问题全额退款</div>
+        <div class="contact-text">若收到商品有品质问题（霉变、异味等），提供照片凭证后全额退款，无需退货</div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">📦</div>
+      <div>
+        <div class="contact-title">快速发货</div>
+        <div class="contact-text">下单后48小时内发出（节假日顺延）<br>顺丰/京东快递全程可追踪</div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">🎁</div>
+      <div>
+        <div class="contact-title">售后无忧</div>
+        <div class="contact-text">茶叶属于食品，但凡有任何不满，请直接联系客服<br>我们不会让您承担任何损失</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 退货流程 -->
+  <div class="section">
+    <div class="section-header">
+      <p class="section-eyebrow">Return Process</p>
+      <h2 class="section-title">退换货流程</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="process-step">
+      <div class="process-num">1</div>
+      <div class="process-content">
+        <div class="process-title">联系客服</div>
+        <div class="process-text">添加客服微信 aspen0725，说明订单号和问题描述</div>
+      </div>
+    </div>
+    <div class="process-step">
+      <div class="process-num">2</div>
+      <div class="process-content">
+        <div class="process-title">提供凭证</div>
+        <div class="process-text">品质问题请拍照上传（茶汤/包装/叶底），便于快速审核</div>
+      </div>
+    </div>
+    <div class="process-step">
+      <div class="process-num">3</div>
+      <div class="process-content">
+        <div class="process-title">等待审核</div>
+        <div class="process-text">客服将在2小时内回复，确认退换货方案（退款/换货/补发）</div>
+      </div>
+    </div>
+    <div class="process-step">
+      <div class="process-num">4</div>
+      <div class="process-content">
+        <div class="process-title">完成处理</div>
+        <div class="process-text">退款将在审核通过后1-3个工作日内原路返回；换货/补发立即安排发出</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 常见问题 -->
+  <div class="section">
+    <div class="section-header">
+      <p class="section-eyebrow">FAQ</p>
+      <h2 class="section-title">常见问题</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">收到的茶叶口味和想象的不一样，可以退货吗？</div>
+      <div class="faq-a">可以的。茶叶口味因人而异，如果您收到的茶叶口味不适合自己，只要未拆封、不影响二次销售，7天内均可申请退换货。请添加客服微信 aspen0725 办理。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">茶叶收到后发现包装破损怎么办？</div>
+      <div class="faq-a">请在收货24小时内拍照（破损包装+茶品），联系客服。我们会立即安排补发或退款，无需您承担任何损失。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">茶叶可以保存多久？</div>
+      <div class="faq-a">密封保存得当，单丛茶可保存2-3年。建议置于阴凉干燥处、避免阳光直射和潮湿。1年内饮用风味最佳。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">如何选择适合自己的茶？</div>
+      <div class="faq-a">可以参考公众号【十大香型图鉴】了解各香型特点，或直接添加客服微信 aspen0725，告知您的口味偏好（喜欢甘甜/清香/高香/回甘等），客服会给您专业推荐。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">支持企业团购/定制吗？</div>
+      <div class="faq-a">支持的！帝临提供企业礼品定制、团购优惠等服务。请添加客服微信 aspen0725，说明需求（数量/预算/定制要求），我们会提供专属方案。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">快递可以到哪些地方？</div>
+      <div class="faq-a">目前支持顺丰/京东快递，覆盖全国大部分地区（港澳台及海外暂不支持）。如有特殊要求，请联系客服确认。</div>
+    </div>
+  </div>
+
+</div>
+
+<nav class="bottom-nav">
+  <a href="index-brand.html" class="bottom-nav-item"><span class="bottom-nav-icon">📖</span>识茶</a>
+  <div class="bottom-nav-divider"></div>
+  <a href="index-aroma.html" class="bottom-nav-item"><span class="bottom-nav-icon">🌸</span>十大香型</a>
+  <div class="bottom-nav-divider"></div>
+  <a href="index-products.html" class="bottom-nav-item"><span class="bottom-nav-icon">🛒</span>买茶</a>
+  <div class="bottom-nav-divider"></div>
+  <a href="#" class="bottom-nav-item active"><span class="bottom-nav-icon">💬</span>联系</a>
+</nav>
+
+<footer class="footer">
+  <p class="footer-logo">帝 临</p>
+  <p class="footer-tagline">山野 · 匠心 · 东方美学</p>
+  <div class="footer-divider"></div>
+  <p class="footer-text">客服微信：aspen0725</p>
+  <p class="footer-text">产地：广东潮州凤凰山</p>
+  <p class="footer-copyright">© 2026 帝临文化 保留所有权利</p>
+</footer>
+
+<script>
+function toggleFaq(el) {
+  el.parentElement.classList.toggle('open');
+}
+</script>
+
+</body>
+</html>
