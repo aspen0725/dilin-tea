@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>体验预约 · 帝临文化</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .booking-form { background: var(--white); border-radius: 20px; padding: 28px 24px; box-shadow: 0 4px 20px var(--shadow); }
+    .form-group { margin-bottom: 20px; }
+    .form-label { font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 8px; display: block; }
+    .form-label span { color: #E53E3E; margin-left: 2px; }
+    .form-input { width: 100%; padding: 12px 16px; border: 1.5px solid var(--border); border-radius: 12px; font-size: 14px; font-family: inherit; color: var(--text); background: var(--bg); transition: border-color 0.2s; outline: none; }
+    .form-input:focus { border-color: var(--primary); background: var(--white); }
+    .form-select { width: 100%; padding: 12px 16px; border: 1.5px solid var(--border); border-radius: 12px; font-size: 14px; font-family: inherit; color: var(--text); background: var(--bg); outline: none; appearance: none; cursor: pointer; }
+    .form-textarea { width: 100%; padding: 12px 16px; border: 1.5px solid var(--border); border-radius: 12px; font-size: 14px; font-family: inherit; color: var(--text); background: var(--bg); resize: vertical; min-height: 100px; outline: none; }
+    .form-submit { width: 100%; padding: 14px; background: var(--primary); color: var(--white); border: none; border-radius: 14px; font-size: 15px; font-weight: 700; cursor: pointer; transition: background 0.2s; font-family: inherit; }
+    .form-submit:hover { background: var(--primary-light); }
+    .form-submit:active { transform: scale(0.98); }
+    .experience-card { background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: 0 2px 16px var(--shadow); margin-bottom: 20px; }
+    .exp-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; background: var(--bg-dark); }
+    .exp-body { padding: 20px; }
+    .exp-title { font-size: 16px; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+    .exp-text { font-size: 13px; color: var(--text-light); line-height: 1.8; }
+    .exp-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 12px; }
+    .exp-tag { font-size: 11px; padding: 3px 10px; border-radius: 20px; background: rgba(26,80,48,0.06); color: var(--primary); }
+  </style>
+</head>
+<body>
+
+<nav class="top-nav">
+  <div class="nav-inner">
+    <a href="index-brand.html" class="nav-logo">
+      <span style="font-size:22px;">🍃</span>
+      <span class="nav-logo-text">帝 临</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index-brand.html">识茶</a></li>
+      <li><a href="index-products.html">买茶</a></li>
+      <li><a href="index-aftersales.html">联系</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="hero">
+  <img class="hero-img" src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=1200&q=80" alt="茶体验" style="width:100%;height:56vw;min-height:280px;max-height:520px;object-fit:cover;filter:brightness(0.7)">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <p class="hero-subtitle">Experience</p>
+      <h1 class="hero-title">体验预约</h1>
+      <p class="hero-tagline">来凤凰山，亲自感受一杯茶的诞生</p>
+    </div>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <a href="#">首页</a>
+  <span class="breadcrumb-sep">›</span>
+  <span>体验预约</span>
+</div>
+
+<div class="container pb-footer">
+
+  <!-- 体验内容 -->
+  <div class="section">
+    <div class="section-header">
+      <p class="section-eyebrow">What to Expect</p>
+      <h2 class="section-title">体验内容</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="experience-card">
+      <img class="exp-img" src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&q=80" alt="茶山体验">
+      <div class="exp-body">
+        <div class="exp-title">🌿 凤凰山茶园探访</div>
+        <p class="exp-text">走进海拔800米以上的凤凰山生态茶园，亲眼见证单丛茶树的生长环境，了解云雾、山场、海拔如何共同塑造一杯好茶。</p>
+        <div class="exp-tags">
+          <span class="exp-tag">茶园探访</span><span class="exp-tag">产地直采</span><span class="exp-tag">生态知识</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="experience-card">
+      <img class="exp-img" src="https://images.unsplash.com/photo-1563822249366-3c8d8be9a6c5?w=800&q=80" alt="制茶体验">
+      <div class="exp-body">
+        <div class="exp-title">🙌 传统制茶工艺体验</div>
+        <p class="exp-text">跟随制茶匠人，亲手体验晒青、晾青、摇青、杀青、揉捻、烘焙等单丛制茶工序，感受一片叶子如何蜕变为茶。</p>
+        <div class="exp-tags">
+          <span class="exp-tag">制茶体验</span><span class="exp-tag">传统工艺</span><span class="exp-tag">匠人面对面</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="experience-card">
+      <img class="exp-img" src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80" alt="品鉴体验">
+      <div class="exp-body">
+        <div class="exp-title">🍵 专业品鉴课</div>
+        <p class="exp-text">国家认证评茶师带你系统品鉴凤凰单丛十大香型，学习如何辨别香气、滋味、回甘，建立属于自己的品鉴坐标系。</p>
+        <div class="exp-tags">
+          <span class="exp-tag">品鉴课</span><span class="exp-tag">十大香型</span><span class="exp-tag">评茶师指导</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 预约表单 -->
+  <div class="section">
+    <div class="section-header">
+      <p class="section-eyebrow">Book Now</p>
+      <h2 class="section-title">预约报名</h2>
+      <div class="section-divider"></div>
+    </div>
+    <p style="font-size:13px;color:var(--text-light);text-align:center;margin-bottom:20px;line-height:1.8;">
+      填写以下信息，我们将在24小时内与您联系确认预约细节。<br>或直接添加客服微信：<strong style="color:var(--primary)">aspen0725</strong>
+    </p>
+
+    <div class="booking-form">
+      <div class="form-group">
+        <label class="form-label">姓名 <span>*</span></label>
+        <input class="form-input" type="text" placeholder="请输入您的姓名" id="name">
+      </div>
+      <div class="form-group">
+        <label class="form-label">手机号码 <span>*</span></label>
+        <input class="form-input" type="tel" placeholder="请输入手机号码" id="phone">
+      </div>
+      <div class="form-group">
+        <label class="form-label">微信号</label>
+        <input class="form-input" type="text" placeholder="选填，方便客服联系" id="wechat">
+      </div>
+      <div class="form-group">
+        <label class="form-label">预约类型 <span>*</span></label>
+        <select class="form-select" id="type">
+          <option value="">请选择体验类型</option>
+          <option value="茶园探访">🌿 凤凰山茶园探访（一日游）</option>
+          <option value="制茶体验">🙌 传统制茶工艺体验（半日）</option>
+          <option value="品鉴课">🍵 专业品鉴课（2小时）</option>
+          <option value="综合体验">🎁 综合体验套餐（两天一夜）</option>
+          <option value="企业定制">🏢 企业/团队定制（请备注需求）</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">预约日期</label>
+        <input class="form-input" type="date" id="date">
+      </div>
+      <div class="form-group">
+        <label class="form-label">参与人数 <span>*</span></label>
+        <select class="form-select" id="people">
+          <option value="">请选择人数</option>
+          <option value="1人">1人</option>
+          <option value="2人">2人</option>
+          <option value="3-5人">3-5人</option>
+          <option value="6-10人">6-10人</option>
+          <option value="10人以上">10人以上（请备注）</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">备注说明</label>
+        <textarea class="form-textarea" placeholder="如有特殊需求（饮食禁忌、行程安排等），请在此说明" id="note"></textarea>
+      </div>
+      <button class="form-submit" onclick="submitBooking()">提交预约申请</button>
+    </div>
+
+    <div style="text-align:center;margin-top:16px;font-size:13px;color:var(--text-light);line-height:1.8;">
+      提交即表示同意我们的<br>预约规则与取消政策
+    </div>
+  </div>
+
+  <!-- 预约须知 -->
+  <div class="section">
+    <div class="section-header">
+      <p class="section-eyebrow">Notice</p>
+      <h2 class="section-title">预约须知</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">📍</div>
+      <div>
+        <div class="contact-title">集合地点</div>
+        <div class="contact-text">广东潮州凤凰山 帝临文化生态茶园<br>预约确认后，客服将发送详细导航地址</div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">📅</div>
+      <div>
+        <div class="contact-title">开放时间</div>
+        <div class="contact-text">采茶季（3-5月）体验最丰富<br>全年接受预约，需提前7天申请</div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">💰</div>
+      <div>
+        <div class="contact-title">费用说明</div>
+        <div class="contact-text">基础体验免费参与<br>制茶体验/综合套餐收取材料费，请咨询客服确认价格</div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">🔄</div>
+      <div>
+        <div class="contact-title">取消政策</div>
+        <div class="contact-text">预约日期前3天内取消，请提前告知<br>临时取消或无故缺席，不影响下次预约资格</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<nav class="bottom-nav">
+  <a href="index-brand.html" class="bottom-nav-item"><span class="bottom-nav-icon">📖</span>识茶</a>
+  <div class="bottom-nav-divider"></div>
+  <a href="index-aroma.html" class="bottom-nav-item"><span class="bottom-nav-icon">🌸</span>十大香型</a>
+  <div class="bottom-nav-divider"></div>
+  <a href="index-products.html" class="bottom-nav-item"><span class="bottom-nav-icon">🛒</span>买茶</a>
+  <div class="bottom-nav-divider"></div>
+  <a href="#" class="bottom-nav-item active"><span class="bottom-nav-icon">💬</span>联系</a>
+</nav>
+
+<footer class="footer">
+  <p class="footer-logo">帝 临</p>
+  <p class="footer-tagline">山野 · 匠心 · 东方美学</p>
+  <div class="footer-divider"></div>
+  <p class="footer-text">客服微信：aspen0725</p>
+  <p class="footer-text">产地：广东潮州凤凰山</p>
+  <p class="footer-copyright">© 2026 帝临文化 保留所有权利</p>
+</footer>
+
+<script>
+function submitBooking() {
+  const name = document.getElementById('name').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const type = document.getElementById('type').value;
+  const people = document.getElementById('people').value;
+
+  if (!name) { alert('请填写姓名'); return; }
+  if (!phone) { alert('请填写手机号码'); return; }
+  if (!type) { alert('请选择预约类型'); return; }
+  if (!people) { alert('请选择参与人数'); return; }
+
+  const btn = document.querySelector('.form-submit');
+  btn.textContent = '提交中...';
+  btn.disabled = true;
+
+  // 模拟提交（实际接入需后台支持）
+  setTimeout(() => {
+    btn.textContent = '✓ 预约申请已提交';
+    btn.style.background = '#2A7A50';
+    setTimeout(() => {
+      alert('预约申请已收到！我们将在24小时内联系您确认。\n\n也可直接添加客服微信：aspen0725');
+      btn.textContent = '提交预约申请';
+      btn.disabled = false;
+      btn.style.background = '';
+    }, 800);
+  }, 1200);
+}
+</script>
+
+</body>
+</html>
