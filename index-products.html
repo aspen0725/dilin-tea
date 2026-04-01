@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>买茶 · 帝临文化</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .series-nav { display: flex; gap: 8px; overflow-x: auto; padding: 16px 20px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+    .series-nav::-webkit-scrollbar { display: none; }
+    .series-btn { flex-shrink: 0; font-size: 13px; padding: 7px 18px; border-radius: 20px; border: 1.5px solid var(--border); background: var(--white); color: var(--text-light); cursor: pointer; white-space: nowrap; transition: all 0.2s; font-weight: 500; }
+    .series-btn.active, .series-btn:hover { border-color: var(--primary); background: var(--primary); color: var(--white); }
+    .series-section { padding: 32px 0 0; }
+    .series-label { font-size: 11px; letter-spacing: 3px; color: var(--secondary); text-transform: uppercase; margin-bottom: 6px; }
+    .series-title { font-size: 20px; font-weight: 700; color: var(--primary); margin-bottom: 4px; }
+    .series-desc { font-size: 13px; color: var(--text-light); margin-bottom: 20px; }
+    .product-tags { display: flex; gap: 6px; flex-wrap: wrap; margin: 12px 0; }
+    .product-tag { font-size: 11px; padding: 3px 10px; border-radius: 20px; background: rgba(26,80,48,0.06); color: var(--primary); }
+    .buy-btn { display: inline-flex; align-items: center; gap: 6px; background: var(--primary); color: var(--white); text-decoration: none; font-size: 14px; font-weight: 600; padding: 12px 24px; border-radius: 24px; transition: background 0.2s; }
+    .buy-btn:hover { background: var(--primary-light); }
+    .buy-section { padding: 0 20px 24px; }
+  </style>
+</head>
+<body>
+
+<nav class="top-nav">
+  <div class="nav-inner">
+    <a href="index-brand.html" class="nav-logo">
+      <span style="font-size:22px;">🍃</span>
+      <span class="nav-logo-text">帝 临</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index-brand.html">识茶</a></li>
+      <li><a href="index-aroma.html">十大香型</a></li>
+      <li><a href="#" class="active">买茶</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+  <img class="hero-img" src="https://images.unsplash.com/photo-1558160074-4d7d8bdf4256?w=1200&q=80" alt="帝临茶品" style="width:100%;height:56vw;min-height:280px;max-height:520px;object-fit:cover;filter:brightness(0.8)">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <p class="hero-subtitle">Our Products</p>
+      <h1 class="hero-title">找到属于你的<br>那一杯单丛</h1>
+      <p class="hero-tagline">悦己 · 共情 · 仪式 · 归心</p>
+    </div>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <a href="#">首页</a>
+  <span class="breadcrumb-sep">›</span>
+  <span>买茶</span>
+</div>
+
+<!-- 系列导航 -->
+<div class="series-nav" style="position:sticky;top:52px;z-index:50;background:var(--bg);">
+  <button class="series-btn active" onclick="scrollToSeries('yueji')">悦己系列</button>
+  <button class="series-btn" onclick="scrollToSeries('gongqing')">共情系列</button>
+  <button class="series-btn" onclick="scrollToSeries('yishi')">仪式系列</button>
+  <button class="series-btn" onclick="scrollToSeries('guixin')">归心系列</button>
+  <button class="series-btn" onclick="scrollToSeries('tehui')">爆款特惠</button>
+</div>
+
+<div class="container pb-footer">
+
+  <!-- 悦己系列 -->
+  <div class="series-section" id="yueji">
+    <div class="series-label">悦己系列 · Joy for Self</div>
+    <div class="series-title">一个人的茶，与自己和解</div>
+    <div class="series-desc">适合独处时刻，为自己泡一杯的温柔时光</div>
+
+    <div class="product-card">
+      <div class="product-img-wrap">
+        <img class="product-img" src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&q=80" alt="蜜兰香单丛">
+        <span class="product-badge">经典款</span>
+      </div>
+      <div class="product-body">
+        <div class="product-name">蜜兰香 · 悦己装</div>
+        <p class="product-desc">入门首选，香气甘醇，回甘持久。50克便携装，适合日常独饮，随时随地给自己一份温柔。</p>
+        <div class="product-tags">
+          <span class="product-tag">蜜兰香</span><span class="product-tag">入门推荐</span><span class="product-tag">便携装</span>
+        </div>
+        <div class="product-bottom" style="padding:16px 0 0;border-top:none;">
+          <div class="product-price">¥168<span class="product-price-unit">/ 50g</span></div>
+          <a href="#" class="buy-btn">立即购买 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-wrap">
+        <img class="product-img" src="https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?w=800&q=80" alt="玉兰香单丛">
+      </div>
+      <div class="product-body">
+        <div class="product-name">玉兰香 · 悦己装</div>
+        <p class="product-desc">小清新代表，香气纯净高雅，轻松易饮无负担。100克家庭装，适合每日品饮。</p>
+        <div class="product-tags">
+          <span class="product-tag">玉兰香</span><span class="product-tag">小清新</span><span class="product-tag">家庭装</span>
+        </div>
+        <div class="product-bottom" style="padding:16px 0 0;border-top:none;">
+          <div class="product-price">¥228<span class="product-price-unit">/ 100g</span></div>
+          <a href="#" class="buy-btn">立即购买 →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 爆款特惠 Banner -->
+  <div class="promo-banner" id="tehui">
+    <div class="promo-label">Limited Time</div>
+    <div class="promo-title">🎉 爆款限时特惠</div>
+    <div class="promo-sub">鸭屎香限时8折 · 限量100份 · 售完即止</div>
+    <a href="#" class="promo-cta">查看特惠专区 →</a>
+  </div>
+
+  <!-- 共情系列 -->
+  <div class="series-section" id="gongqing">
+    <div class="series-label">共情系列 · Empathy</div>
+    <div class="series-title">分享的茶，连接的温度</div>
+    <div class="series-desc">适合与朋友、家人分享的茶礼，让茶成为心意的载体</div>
+
+    <div class="product-card">
+      <div class="product-img-wrap">
+        <img class="product-img" src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=800&q=80" alt="黄枝香单丛">
+        <span class="product-badge">热门</span>
+      </div>
+      <div class="product-body">
+        <div class="product-name">黄枝香 · 共情礼盒</div>
+        <p class="product-desc">香气层次丰富，被誉为"茶中香水"。精美礼盒包装，适合送礼或与挚友共品。</p>
+        <div class="product-tags">
+          <span class="product-tag">黄枝香</span><span class="product-tag">礼品</span><span class="product-tag">礼盒装</span>
+        </div>
+        <div class="product-bottom" style="padding:16px 0 0;border-top:none;">
+          <div class="product-price">¥368<span class="product-price-unit">/ 礼盒</span></div>
+          <a href="#" class="buy-btn">立即购买 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-wrap">
+        <img class="product-img" src="https://images.unsplash.com/photo-1563822249366-3c8d8be9a6c5?w=800&q=80" alt="芝兰香单丛">
+      </div>
+      <div class="product-body">
+        <div class="product-name">芝兰香 · 共情礼盒</div>
+        <p class="product-desc">幽雅脱俗，空谷兰香。适合送给品位相近的朋友，表达一份独特的关心。</p>
+        <div class="product-tags">
+          <span class="product-tag">芝兰香</span><span class="product-tag">雅礼</span><span class="product-tag">精品礼盒</span>
+        </div>
+        <div class="product-bottom" style="padding:16px 0 0;border-top:none;">
+          <div class="product-price">¥428<span class="product-price-unit">/ 礼盒</span></div>
+          <a href="#" class="buy-btn">立即购买 →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 仪式系列 -->
+  <div class="series-section" id="yishi">
+    <div class="series-label">仪式系列 · Ritual</div>
+    <div class="series-title">有仪式感的生活，是认真的</div>
+    <div class="series-desc">限量珍稀单品，为特别的日子准备的茶礼</div>
+
+    <div class="product-card">
+      <div class="product-img-wrap">
+        <img class="product-img" src="https://images.unsplash.com/photo-1523906630133-06c4be7c3e2e?w=800&q=80" alt="通天香">
+        <span class="product-badge" style="background:var(--secondary);color:var(--white);">限量</span>
+      </div>
+      <div class="product-body">
+        <div class="product-name">通天香 · 仪式甄选</div>
+        <p class="product-desc">单丛之王，香气通天。精选凤凰山海拔最高区域的古树，限量发售，珍藏之选。</p>
+        <div class="product-tags">
+          <span class="product-tag">通天香</span><span class="product-tag">限量</span><span class="product-tag">珍藏级</span>
+        </div>
+        <div class="product-bottom" style="padding:16px 0 0;border-top:none;">
+          <div class="product-price">¥1280<span class="product-price-unit">/ 100g</span></div>
+          <a href="#" class="buy-btn">立即购买 →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 归心系列 -->
+  <div class="series-section" id="guixin">
+    <div class="series-label">归心系列 · Home</div>
+    <div class="series-title">家的味道，心安之处</div>
+    <div class="series-desc">适合家庭日常、节日聚会的茶，让茶成为家的味道</div>
+
+    <div class="product-card">
+      <div class="product-img-wrap">
+        <img class="product-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="杏仁香归心装">
+      </div>
+      <div class="product-body">
+        <div class="product-name">杏仁香 · 归心装</div>
+        <p class="product-desc">老茶客的心头好，250克家庭装，足够一个月日常品饮，实惠之选。</p>
+        <div class="product-tags">
+          <span class="product-tag">杏仁香</span><span class="product-tag">家庭装</span><span class="product-tag">实惠</span>
+        </div>
+        <div class="product-bottom" style="padding:16px 0 0;border-top:none;">
+          <div class="product-price">¥398<span class="product-price-unit">/ 250g</span></div>
+          <a href="#" class="buy-btn">立即购买 →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 购买须知 -->
+  <div class="section" style="padding-top:40px;">
+    <div class="section-header">
+      <p class="section-eyebrow">Purchase Info</p>
+      <h2 class="section-title">购买须知</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">📦</div>
+      <div>
+        <div class="contact-title">发货说明</div>
+        <div class="contact-text">下单后48小时内发出（节假日顺延）<br>顺丰/京东快递，茶叶专用防潮包装</div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">🔄</div>
+      <div>
+        <div class="contact-title">售后保障</div>
+        <div class="contact-text">7天无理由退换（不影响二次销售）<br>品质问题全额退款，无需理由</div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">💬</div>
+      <div>
+        <div class="contact-title">人工客服</div>
+        <div class="contact-text">添加客服微信 <span class="contact-link">aspen0725</span><br>备注"公众号茶友"，获取专属推荐</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<nav class="bottom-nav">
+  <a href="index-brand.html" class="bottom-nav-item">
+    <span class="bottom-nav-icon">📖</span>识茶
+  </a>
+  <div class="bottom-nav-divider"></div>
+  <a href="index-aroma.html" class="bottom-nav-item">
+    <span class="bottom-nav-icon">🌸</span>十大香型
+  </a>
+  <div class="bottom-nav-divider"></div>
+  <a href="#" class="bottom-nav-item active">
+    <span class="bottom-nav-icon">🛒</span>买茶
+  </a>
+  <div class="bottom-nav-divider"></div>
+  <a href="#" class="bottom-nav-item">
+    <span class="bottom-nav-icon">💬</span>联系
+  </a>
+</nav>
+
+<footer class="footer">
+  <p class="footer-logo">帝 临</p>
+  <p class="footer-tagline">山野 · 匠心 · 东方美学</p>
+  <div class="footer-divider"></div>
+  <p class="footer-text">客服微信：aspen0725</p>
+  <p class="footer-text">产地：广东潮州凤凰山</p>
+  <p class="footer-copyright">© 2026 帝临文化 保留所有权利</p>
+</footer>
+
+<script>
+function scrollToSeries(id) {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // update active button
+  document.querySelectorAll('.series-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+
+</body>
+</html>
