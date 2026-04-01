@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>品牌故事 · 帝临文化</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .hero { background: #1A5030; }
+    .value-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; margin-top: 28px; }
+    .value-item { background: var(--white); border-radius: 16px; padding: 20px 16px; text-align: center; box-shadow: 0 2px 12px var(--shadow); }
+    .value-icon { font-size: 32px; margin-bottom: 10px; }
+    .value-name { font-size: 14px; font-weight: 700; color: var(--primary); margin-bottom: 4px; }
+    .value-text { font-size: 11px; color: var(--text-light); line-height: 1.6; }
+    .founder-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .founder-card { background: var(--white); border-radius: 16px; overflow: hidden; box-shadow: 0 2px 12px var(--shadow); }
+    .founder-img { width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--bg-dark); }
+    .founder-body { padding: 16px; }
+    .founder-name { font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    .founder-role { font-size: 12px; color: var(--secondary); margin-bottom: 6px; }
+    .founder-text { font-size: 12px; color: var(--text-light); line-height: 1.6; }
+    @media (max-width: 480px) { .value-grid { grid-template-columns: 1fr 1fr; } .founder-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<!-- 顶部导航 -->
+<nav class="top-nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <span style="font-size:22px;">🍃</span>
+      <span class="nav-logo-text">帝 临</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index-brand.html" class="active">识茶</a></li>
+      <li><a href="index-products.html">买茶</a></li>
+      <li><a href="#contact">联系</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+  <img class="hero-img" src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=1200&q=80" alt="凤凰山茶园" style="width:100%;height:56vw;min-height:280px;max-height:520px;object-fit:cover;filter:brightness(0.8)">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <p class="hero-subtitle">Brand Story</p>
+      <h1 class="hero-title">从一片叶子<br>到东方美学的生活方式</h1>
+      <p class="hero-tagline">山野 · 匠心 · 东方美学</p>
+    </div>
+  </div>
+</div>
+
+<!-- 面包屑 -->
+<div class="breadcrumb">
+  <a href="#">首页</a>
+  <span class="breadcrumb-sep">›</span>
+  <a href="#">识茶</a>
+  <span class="breadcrumb-sep">›</span>
+  <span>品牌故事</span>
+</div>
+
+<div class="container pb-footer">
+
+  <!-- 品牌宣言 -->
+  <div class="section">
+    <div class="section-header">
+      <p class="section-eyebrow">Our Belief</p>
+      <h2 class="section-title">我们相信</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="quote-block">
+      <p class="quote-text">"茶从不是奢侈品，而是疲惫时的慰藉，独处时的陪伴，相聚时的心意。"</p>
+      <p class="quote-author">— 帝临文化 · 品牌初心</p>
+    </div>
+    <p style="font-size:14px;color:var(--text-light);line-height:2;margin-top:16px;">
+      帝临文化创立于对一杯好茶的执念。我们走遍潮州凤凰山脉，只为找到那片云雾缭绕的山野里、最有灵气的单丛茶树。每一片茶叶，都承载着匠人数十年制茶经验的温度；每一口茶汤，都是东方美学的日常实践。
+    </p>
+  </div>
+
+  <!-- 三大价值 -->
+  <div class="section">
+    <div class="section-header">
+      <p class="section-eyebrow">Our Values</p>
+      <h2 class="section-title">品牌三大核心</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="value-grid">
+      <div class="value-item">
+        <div class="value-icon">⛰️</div>
+        <div class="value-name">山 野</div>
+        <div class="value-text">广东潮州凤凰山<br>海拔800米以上<br>云雾滋养，纯净无染</div>
+      </div>
+      <div class="value-item">
+        <div class="value-icon">🙌</div>
+        <div class="value-name">匠 心</div>
+        <div class="value-text">数十年制茶经验<br>传统炭焙工艺<br>每一道工序皆有温度</div>
+      </div>
+      <div class="value-item">
+        <div class="value-icon">🏮</div>
+        <div class="value-name">东方美学</div>
+        <div class="value-text">宋代点茶之雅<br>东方留白之韵<br>融入当代生活美学</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 品牌故事时间线 -->
+  <div class="section">
+    <div class="section-header">
+      <p class="section-eyebrow">Our Journey</p>
+      <h2 class="section-title">品牌历程</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-dot">1</div>
+        <div class="step-title">缘起 · 凤凰山</div>
+        <div class="step-text">创始团队深入潮州凤凰山脉，寻找那些隐匿于云雾之间、百年树龄以上的古老茶树，与当地制茶匠人建立深度合作。</div>
+      </div>
+      <div class="step">
+        <div class="step-dot">2</div>
+        <div class="step-title">寻味 · 十大香型</div>
+        <div class="step-text">系统梳理凤凰单丛十大香型，建立完整的品鉴体系和知识库，让每一种独特的香气都能被准确感知和传达。</div>
+      </div>
+      <div class="step">
+        <div class="step-dot">3</div>
+        <div class="step-title">创牌 · 帝临文化</div>
+        <div class="step-text">以"山野·匠心·东方美学"为品牌定位，推出悦己、共情、仪式、归心四大产品系列，让单丛茶以更当代的方式走进日常生活。</div>
+      </div>
+      <div class="step">
+        <div class="step-dot">4</div>
+        <div class="step-title">愿景 · 东方茶生活方式</div>
+        <div class="step-text">让更多人通过一杯帝临的单丛茶，感受东方山野的宁静与匠心，在日常中实践属于自己的东方美学生活方式。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 创始人说 -->
+  <div class="section">
+    <div class="section-header">
+      <p class="section-eyebrow">From Founder</p>
+      <h2 class="section-title">创始人说</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="quote-block">
+      <p class="quote-text">"我们不只是在卖茶，我们是在分享一种生活的可能性。一杯好茶，可以让人慢下来，听见自己内心的声音。"</p>
+      <p class="quote-author">— 帝临文化 创始人</p>
+    </div>
+    <div style="margin-top:20px;padding:20px;background:var(--white);border-radius:16px;box-shadow:0 2px 12px var(--shadow);">
+      <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&q=80" alt="茶园" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin-bottom:16px;">
+      <p style="font-size:14px;color:var(--text);line-height:2;">
+        在凤凰山，海拔千米之上，有一片被云雾眷顾的茶园。清晨采茶时，茶芽上还挂着露珠，阳光透过云层洒落，整个山谷弥漫着淡淡的花香——这就是帝临单丛的起点，也是我们想要传递给每一位茶友的：自然的馈赠、匠人的坚守，和东方生活美学的温度。
+      </p>
+    </div>
+  </div>
+
+  <!-- 联系我们 -->
+  <div class="section" id="contact">
+    <div class="section-header">
+      <p class="section-eyebrow">Contact Us</p>
+      <h2 class="section-title">联系我们</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">💬</div>
+      <div>
+        <div class="contact-title">添加客服微信</div>
+        <div class="contact-text">有任何问题或想了解更多产品，欢迎添加客服<br><span class="contact-link">微信号：aspen0725</span></div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">🏔️</div>
+      <div>
+        <div class="contact-title">产地直采</div>
+        <div class="contact-text">广东潮州凤凰山<br>海拔800米+ 生态茶园</div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">📦</div>
+      <div>
+        <div class="contact-title">售后保障</div>
+        <div class="contact-text">7天无理由退换 · 品质问题全额退款<br>下单后48小时内发出（节假日顺延）</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- 底部导航 -->
+<nav class="bottom-nav">
+  <a href="index-brand.html" class="bottom-nav-item active">
+    <span class="bottom-nav-icon">📖</span>
+    识茶
+  </a>
+  <div class="bottom-nav-divider"></div>
+  <a href="index-aroma.html" class="bottom-nav-item">
+    <span class="bottom-nav-icon">🌸</span>
+    十大香型
+  </a>
+  <div class="bottom-nav-divider"></div>
+  <a href="index-products.html" class="bottom-nav-item">
+    <span class="bottom-nav-icon">🛒</span>
+    买茶
+  </a>
+  <div class="bottom-nav-divider"></div>
+  <a href="#contact" class="bottom-nav-item">
+    <span class="bottom-nav-icon">💬</span>
+    联系
+  </a>
+</nav>
+
+<!-- 页脚 -->
+<footer class="footer">
+  <p class="footer-logo">帝 临</p>
+  <p class="footer-tagline">山野 · 匠心 · 东方美学</p>
+  <div class="footer-divider"></div>
+  <p class="footer-text">帝临文化传播（广州）有限公司</p>
+  <p class="footer-text">客服微信：aspen0725</p>
+  <p class="footer-text">产地：广东潮州凤凰山</p>
+  <p class="footer-copyright">© 2026 帝临文化 保留所有权利</p>
+</footer>
+
+</body>
+</html>
