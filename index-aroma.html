@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>十大香型图鉴 · 帝临文化</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .aroma-hero { background: var(--primary); }
+    .aroma-filter { display: flex; gap: 8px; overflow-x: auto; padding: 0 20px; -webkit-overflow-scrolling: touch; scrollbar-width: none; margin-bottom: 24px; }
+    .aroma-filter::-webkit-scrollbar { display: none; }
+    .filter-btn { flex-shrink: 0; font-size: 13px; padding: 6px 16px; border-radius: 20px; border: 1.5px solid var(--border); background: var(--white); color: var(--text-light); cursor: pointer; white-space: nowrap; transition: all 0.2s; }
+    .filter-btn.active, .filter-btn:hover { border-color: var(--primary); background: var(--primary); color: var(--white); }
+    .aroma-card-detail { background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: 0 2px 16px var(--shadow); margin-bottom: 24px; }
+    .aroma-detail-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; background: var(--bg-dark); }
+    .aroma-detail-body { padding: 24px; }
+    .aroma-detail-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 12px; }
+    .aroma-detail-name { font-size: 20px; font-weight: 700; color: var(--primary); }
+    .aroma-detail-sub { font-size: 12px; color: var(--text-light); margin-top: 2px; }
+    .aroma-tag { display: inline-block; font-size: 11px; padding: 4px 12px; border-radius: 20px; background: rgba(200,169,110,0.12); color: var(--secondary); }
+    .aroma-specs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 16px 0; }
+    .spec-item { background: var(--bg); border-radius: 10px; padding: 12px; }
+    .spec-label { font-size: 11px; color: var(--text-light); margin-bottom: 4px; }
+    .spec-value { font-size: 13px; color: var(--text); font-weight: 600; line-height: 1.4; }
+    .aroma-quote { font-size: 14px; color: var(--text); line-height: 1.8; font-style: italic; padding: 16px; background: rgba(26,80,48,0.04); border-radius: 12px; border-left: 3px solid var(--secondary); margin: 16px 0; }
+    .aroma-cta { display: block; text-align: center; background: var(--primary); color: var(--white); text-decoration: none; font-size: 14px; font-weight: 600; padding: 12px; border-radius: 12px; transition: background 0.2s; }
+    .aroma-cta:hover { background: var(--primary-light); }
+    .intro-section { background: var(--white); border-radius: 20px; padding: 24px; margin-bottom: 24px; box-shadow: 0 2px 16px var(--shadow); }
+    .intro-title { font-size: 16px; font-weight: 700; color: var(--primary); margin-bottom: 12px; }
+    .intro-text { font-size: 14px; color: var(--text-light); line-height: 2; }
+    .intro-text em { color: var(--text); font-style: normal; font-weight: 600; }
+  </style>
+</head>
+<body>
+
+<nav class="top-nav">
+  <div class="nav-inner">
+    <a href="index-brand.html" class="nav-logo">
+      <span style="font-size:22px;">🍃</span>
+      <span class="nav-logo-text">帝 临</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index-brand.html">识茶</a></li>
+      <li><a href="index-products.html">买茶</a></li>
+      <li><a href="#">联系</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+  <img class="hero-img" src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=1200&q=80" alt="凤凰单丛茶" style="width:100%;height:56vw;min-height:280px;max-height:520px;object-fit:cover;filter:brightness(0.8)">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <p class="hero-subtitle">Phoenix Dancong · Ten Aromas</p>
+      <h1 class="hero-title">凤凰单丛<br>十大香型图鉴</h1>
+      <p class="hero-tagline">一茶一世界，十香十重天</p>
+    </div>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <a href="#">首页</a>
+  <span class="breadcrumb-sep">›</span>
+  <span>十大香型图鉴</span>
+</div>
+
+<div class="container pb-footer" style="padding-top:20px;">
+
+  <!-- 什么是凤凰单丛 -->
+  <div class="intro-section">
+    <div class="intro-title">什么是凤凰单丛？</div>
+    <p class="intro-text">
+      <em>凤凰单丛</em>，产自广东省潮州市凤凰山，是中国乌龙茶中的珍稀品种。"单丛"意为<em>单株采摘、单株制作</em>，保留了每棵茶树独特的品种香。<br><br>
+      凤凰单丛以"<em>十大香型</em>"闻名，每种香型都有独特的香气特征和口感体验。香型是茶叶品种、生长环境（山场）和制作工艺共同作用的结果，也是茶客品鉴单丛的核心乐趣所在。
+    </p>
+  </div>
+
+  <!-- 十大香型 -->
+  <div class="section-header" style="text-align:center;margin-bottom:24px;">
+    <p class="section-eyebrow">The Ten</p>
+    <h2 class="section-title">十大香型一览</h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <!-- 蜜兰香 -->
+  <div class="aroma-card-detail" id="milan">
+    <img class="aroma-detail-img" src="https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?w=900&q=80" alt="蜜兰香">
+    <div class="aroma-detail-body">
+      <div class="aroma-detail-header">
+        <div>
+          <div class="aroma-detail-name">蜜兰香</div>
+          <div class="aroma-detail-sub">入门首选 · 甘醇回甜</div>
+        </div>
+        <span class="aroma-tag">香型 No.01</span>
+      </div>
+      <div class="aroma-specs">
+        <div class="spec-item"><div class="spec-label">干茶</div><div class="spec-value">条索紧结，色泽褐润，带蜜甜香</div></div>
+        <div class="spec-item"><div class="spec-label">茶汤</div><div class="spec-value">橙黄明亮，入口甘甜，蜜香馥郁</div></div>
+        <div class="spec-item"><div class="spec-label">回甘</div><div class="spec-value">持久，蜜韵悠长</div></div>
+        <div class="spec-item"><div class="spec-label">适合人群</div><div class="spec-value">入门茶友 · 日常品饮</div></div>
+      </div>
+      <div class="aroma-quote">"具有蜜的心、兰的质，甘于平凡，却回味无穷。"</div>
+      <a href="#" class="aroma-cta">查看完整介绍 →</a>
+    </div>
+  </div>
+
+  <!-- 鸭屎香 -->
+  <div class="aroma-card-detail" id="yashi">
+    <img class="aroma-detail-img" src="https://images.unsplash.com/photo-1563822249366-3c8d8be9a6c5?w=900&q=80" alt="鸭屎香">
+    <div class="aroma-detail-body">
+      <div class="aroma-detail-header">
+        <div>
+          <div class="aroma-detail-name">鸭屎香</div>
+          <div class="aroma-detail-sub">高香代表 · 香气霸道</div>
+        </div>
+        <span class="aroma-tag">香型 No.02</span>
+      </div>
+      <div class="aroma-specs">
+        <div class="spec-item"><div class="spec-label">干茶</div><div class="spec-value">条索紧卷，色泽深褐，银花香显著</div></div>
+        <div class="spec-item"><div class="spec-label">茶汤</div><div class="spec-value">金黄透亮，银花香气高扬，入口甘醇</div></div>
+        <div class="spec-item"><div class="spec-label">回甘</div><div class="spec-value">明显，齿颊留香</div></div>
+        <div class="spec-item"><div class="spec-label">适合人群</div><div class="spec-value">香气爱好者 · 老茶客</div></div>
+      </div>
+      <div class="aroma-quote">"名字古怪，却是最受欢迎的单丛品种，香到让人难忘。"</div>
+      <a href="#" class="aroma-cta">查看完整介绍 →</a>
+    </div>
+  </div>
+
+  <!-- 黄枝香 -->
+  <div class="aroma-card-detail" id="huangzhi">
+    <img class="aroma-detail-img" src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=900&q=80" alt="黄枝香">
+    <div class="aroma-detail-body">
+      <div class="aroma-detail-header">
+        <div>
+          <div class="aroma-detail-name">黄枝香</div>
+          <div class="aroma-detail-sub">茶中香水 · 香气辨识度高</div>
+        </div>
+        <span class="aroma-tag">香型 No.03</span>
+      </div>
+      <div class="aroma-specs">
+        <div class="spec-item"><div class="spec-label">干茶</div><div class="spec-value">条索紧结，色泽乌褐油润，花果香明显</div></div>
+        <div class="spec-item"><div class="spec-label">茶汤</div><div class="spec-value">金黄透亮，花香馥郁，入口甘甜</div></div>
+        <div class="spec-item"><div class="spec-label">回甘</div><div class="spec-value">持久，层次丰富</div></div>
+        <div class="spec-item"><div class="spec-label">适合人群</div><div class="spec-value">入门首选 · 香气品鉴</div></div>
+      </div>
+      <div class="aroma-quote">"香气层次丰富，每一泡都有不同的惊喜，被誉为'茶中香水'。"</div>
+      <a href="#" class="aroma-cta">查看完整介绍 →</a>
+    </div>
+  </div>
+
+  <!-- 芝兰香 -->
+  <div class="aroma-card-detail" id="zhilan">
+    <img class="aroma-detail-img" src="https://images.unsplash.com/photo-1582793988951-9aed5509eb97?w=900&q=80" alt="芝兰香">
+    <div class="aroma-detail-body">
+      <div class="aroma-detail-header">
+        <div>
+          <div class="aroma-detail-name">芝兰香</div>
+          <div class="aroma-detail-sub">空谷幽兰 · 极雅之选</div>
+        </div>
+        <span class="aroma-tag">香型 No.04</span>
+      </div>
+      <div class="aroma-specs">
+        <div class="spec-item"><div class="spec-label">干茶</div><div class="spec-value">条索紧卷，色泽深褐，兰花香清雅</div></div>
+        <div class="spec-item"><div class="spec-label">茶汤</div><div class="spec-value">澄黄明亮，入口柔和，兰花香气缓缓绽放</div></div>
+        <div class="spec-item"><div class="spec-label">回甘</div><div class="spec-value">清雅绵长，如入芝兰之室</div></div>
+        <div class="spec-item"><div class="spec-label">适合人群</div><div class="spec-value">独处品饮 · 静心悟道</div></div>
+      </div>
+      <div class="aroma-quote">"适合独处时分，一杯芝兰香，让心灵找到归处。"</div>
+      <a href="#" class="aroma-cta">查看完整介绍 →</a>
+    </div>
+  </div>
+
+  <!-- 玉兰香 -->
+  <div class="aroma-card-detail" id="yulan">
+    <img class="aroma-detail-img" src="https://images.unsplash.com/photo-1558160074-4d7d8bdf4256?w=900&q=80" alt="玉兰香">
+    <div class="aroma-detail-body">
+      <div class="aroma-detail-header">
+        <div>
+          <div class="aroma-detail-name">玉兰香</div>
+          <div class="aroma-detail-sub">小清新 · 入门友好</div>
+        </div>
+        <span class="aroma-tag">香型 No.05</span>
+      </div>
+      <div class="aroma-specs">
+        <div class="spec-item"><div class="spec-label">干茶</div><div class="spec-value">紧结挺直，色泽墨绿起霜，毫香显著</div></div>
+        <div class="spec-item"><div class="spec-label">茶汤</div><div class="spec-value">浅金黄，清澈透亮，入口甘醇</div></div>
+        <div class="spec-item"><div class="spec-label">回甘</div><div class="spec-value">清雅，无负担</div></div>
+        <div class="spec-item"><div class="spec-label">适合人群</div><div class="spec-value">初次接触单丛者</div></div>
+      </div>
+      <div class="aroma-quote">"香气纯净高雅，轻松易饮，是单丛中的'小清新'。"</div>
+      <a href="#" class="aroma-cta">查看完整介绍 →</a>
+    </div>
+  </div>
+
+  <!-- 杏仁香 -->
+  <div class="aroma-card-detail" id="xingren">
+    <img class="aroma-detail-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80" alt="杏仁香">
+    <div class="aroma-detail-body">
+      <div class="aroma-detail-header">
+        <div>
+          <div class="aroma-detail-name">杏仁香</div>
+          <div class="aroma-detail-sub">锯剁仔 · 老茶客心头好</div>
+        </div>
+        <span class="aroma-tag">香型 No.06</span>
+      </div>
+      <div class="aroma-specs">
+        <div class="spec-item"><div class="spec-label">干茶</div><div class="spec-value">叶缘锯齿如锯，开汤却有迷人坚果香</div></div>
+        <div class="spec-item"><div class="spec-label">茶汤</div><div class="spec-value">橙黄明亮，杏仁香与蜜香交织</div></div>
+        <div class="spec-item"><div class="spec-label">回甘</div><div class="spec-value">收敛后甘甜涌上</div></div>
+        <div class="spec-item"><div class="spec-label">适合人群</div><div class="spec-value">资深茶客</div></div>
+      </div>
+      <div class="aroma-quote">"名字来自叶片形状，香气却惊艳全场，是老茶客的心头好。"</div>
+      <a href="#" class="aroma-cta">查看完整介绍 →</a>
+    </div>
+  </div>
+
+  <!-- 通天香 -->
+  <div class="aroma-card-detail" id="tongtian">
+    <img class="aroma-detail-img" src="https://images.unsplash.com/photo-1523906630133-06c4be7c3e2e?w=900&q=80" alt="通天香">
+    <div class="aroma-detail-body">
+      <div class="aroma-detail-header">
+        <div>
+          <div class="aroma-detail-name">通天香</div>
+          <div class="aroma-detail-sub">单丛之王 · 香气通天</div>
+        </div>
+        <span class="aroma-tag">香型 No.07</span>
+      </div>
+      <div class="aroma-specs">
+        <div class="spec-item"><div class="spec-label">干茶</div><div class="spec-value">条索粗壮，色泽黄褐，姜花木本香</div></div>
+        <div class="spec-item"><div class="spec-label">茶汤</div><div class="spec-value">金黄澄澈，轻辛辣感转化持久甘甜</div></div>
+        <div class="spec-item"><div class="spec-label">回甘</div><div class="spec-value">霸道，层次极其丰富</div></div>
+        <div class="spec-item"><div class="spec-label">适合人群</div><div class="spec-value">资深茶客 · 品鉴收藏</div></div>
+      </div>
+      <div class="aroma-quote">"被誉为'单丛之王'，香气霸道而回味无穷，品的是山野之气。"</div>
+      <a href="#" class="aroma-cta">查看完整介绍 →</a>
+    </div>
+  </div>
+
+  <!-- 姜花香 -->
+  <div class="aroma-card-detail" id="jianghua">
+    <img class="aroma-detail-img" src="https://images.unsplash.com/photo-1582793988951-9aed5509eb97?w=900&q=80" alt="姜花香">
+    <div class="aroma-detail-body">
+      <div class="aroma-detail-header">
+        <div>
+          <div class="aroma-detail-name">姜花香</div>
+          <div class="aroma-detail-sub">高香典范 · 闻香识茶</div>
+        </div>
+        <span class="aroma-tag">香型 No.08</span>
+      </div>
+      <div class="aroma-specs">
+        <div class="spec-item"><div class="spec-label">干茶</div><div class="spec-value">紧结卷曲，色泽褐润，香气张扬</div></div>
+        <div class="spec-item"><div class="spec-label">茶汤</div><div class="spec-value">金黄透亮，姜花香气高扬，清冽醒神</div></div>
+        <div class="spec-item"><div class="spec-label">回甘</div><div class="spec-value">满口生香，持久</div></div>
+        <div class="spec-item"><div class="spec-label">适合人群</div><div class="spec-value">茶席雅集 · 香气品鉴</div></div>
+      </div>
+      <div class="aroma-quote">"冲泡时满室生香，是'闻香识茶'的典范，最能打动人心。"</div>
+      <a href="#" class="aroma-cta">查看完整介绍 →</a>
+    </div>
+  </div>
+
+  <!-- 蛤古捞 -->
+  <div class="aroma-card-detail" id="hagula">
+    <img class="aroma-detail-img" src="https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?w=900&q=80" alt="蛤古捞">
+    <div class="aroma-detail-body">
+      <div class="aroma-detail-header">
+        <div>
+          <div class="aroma-detail-name">蛤古捞</div>
+          <div class="aroma-detail-sub">单丛活化石 · 珍稀品种</div>
+        </div>
+        <span class="aroma-tag">香型 No.09</span>
+      </div>
+      <div class="aroma-specs">
+        <div class="spec-item"><div class="spec-label">干茶</div><div class="spec-value">叶张大如蛤古叶，条索肥壮</div></div>
+        <div class="spec-item"><div class="spec-label">茶汤</div><div class="spec-value">橙红明亮，木本香与花蜜香交融</div></div>
+        <div class="spec-item"><div class="spec-label">回甘</div><div class="spec-value">深厚绵长，独特山韵</div></div>
+        <div class="spec-item"><div class="spec-label">适合人群</div><div class="spec-value">懂茶之人 · 收藏珍品</div></div>
+      </div>
+      <div class="aroma-quote">"被称为'单丛活化石'，是凤凰单丛最古老的品种之一，极为珍稀。"</div>
+      <a href="#" class="aroma-cta">查看完整介绍 →</a>
+    </div>
+  </div>
+
+  <!-- 夜来香 -->
+  <div class="aroma-card-detail" id="yelai">
+    <img class="aroma-detail-img" src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80" alt="夜来香">
+    <div class="aroma-detail-body">
+      <div class="aroma-detail-header">
+        <div>
+          <div class="aroma-detail-name">夜来香</div>
+          <div class="aroma-detail-sub">文人气质 · 夜间更盛</div>
+        </div>
+        <span class="aroma-tag">香型 No.10</span>
+      </div>
+      <div class="aroma-specs">
+        <div class="spec-item"><div class="spec-label">干茶</div><div class="spec-value">条索紧卷，深褐色泽，夜间香气更显</div></div>
+        <div class="spec-item"><div class="spec-label">茶汤</div><div class="spec-value">橙红明亮，夜来花香浓郁，入口醇厚</div></div>
+        <div class="spec-item"><div class="spec-label">回甘</div><div class="spec-value">夜间品饮香气更盛</div></div>
+        <div class="spec-item"><div class="spec-label">适合人群</div><div class="spec-value">独处时分 · 文学气质</div></div>
+      </div>
+      <div class="aroma-quote">"自带诗意，是最具文人气质的一款单丛，最适合夜深人静时独酌。"</div>
+      <a href="#" class="aroma-cta">查看完整介绍 →</a>
+    </div>
+  </div>
+
+  <!-- 选茶建议 -->
+  <div class="intro-section" style="background: linear-gradient(135deg, rgba(26,80,48,0.04), rgba(200,169,110,0.08));">
+    <div class="intro-title">如何选择适合自己的香型？</div>
+    <p class="intro-text" style="line-height:2.2;">
+      <em>初次接触单丛</em>：推荐从蜜兰香或玉兰香开始，香气清晰易辨，口感甘醇无苦味。<br><br>
+      <em>喜欢高香茶</em>：鸭屎香、姜花香是首选，冲泡时满室生香，令人难忘。<br><br>
+      <em>追求回甘层次</em>：黄枝香、通天香回甘层次丰富，适合细品。<br><br>
+      <em>独处静心</em>：芝兰香、夜来香幽雅脱俗，最适合一个人慢慢品饮。
+    </p>
+    <a href="index-products.html" class="aroma-cta" style="margin-top:16px;">去选购 →</a>
+  </div>
+
+</div>
+
+<nav class="bottom-nav">
+  <a href="index-brand.html" class="bottom-nav-item">
+    <span class="bottom-nav-icon">📖</span>识茶
+  </a>
+  <div class="bottom-nav-divider"></div>
+  <a href="#" class="bottom-nav-item active">
+    <span class="bottom-nav-icon">🌸</span>十大香型
+  </a>
+  <div class="bottom-nav-divider"></div>
+  <a href="index-products.html" class="bottom-nav-item">
+    <span class="bottom-nav-icon">🛒</span>买茶
+  </a>
+  <div class="bottom-nav-divider"></div>
+  <a href="#" class="bottom-nav-item">
+    <span class="bottom-nav-icon">💬</span>联系
+  </a>
+</nav>
+
+<footer class="footer">
+  <p class="footer-logo">帝 临</p>
+  <p class="footer-tagline">山野 · 匠心 · 东方美学</p>
+  <div class="footer-divider"></div>
+  <p class="footer-text">客服微信：aspen0725</p>
+  <p class="footer-text">产地：广东潮州凤凰山</p>
+  <p class="footer-copyright">© 2026 帝临文化 保留所有权利</p>
+</footer>
+
+</body>
+</html>
